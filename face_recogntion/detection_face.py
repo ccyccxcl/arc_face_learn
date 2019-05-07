@@ -73,6 +73,9 @@ class DetectionFace(object):
         feature_dic_frame = self.get_face_feature(frame)
         if len(feature_dic_frame) > 0:
             for i in list(feature_dic_frame.keys()):
+                # Tip: the point of box will be <0 or > imane.size
+                # it should be do something
+		# such as if box<0 , box=0 ,if box>iamge.shape[0],box=int(image.shape[0])
                 bounding_box_list.append(((
                     feature_dic_frame[i][0].left, feature_dic_frame[i][0].top, feature_dic_frame[i][0].right,
                     feature_dic_frame[i][0].bottom)))
