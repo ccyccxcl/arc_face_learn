@@ -1,10 +1,11 @@
-from vision.face_recogntion.arc_face.face_detect_sdk import *
-from vision.face_recogntion.arc_face.face_property_sdk import *
-from conf.config_setting import MODE_PATH_DICT
+from .face_property_sdk import *
+from .face_detect_sdk import *
+from face_recogntion.arc_face import *
 
-init_dll = CDLL(MODE_PATH_DICT["face"]["model_init"])
-dll = CDLL(MODE_PATH_DICT["face"]["model_engine"])
-dllc = CDLL(u'/lib/x86_64-linux-gnu/libc.so.6')
+init_dll = CDLL(ARC_INIT_SO)
+dll = CDLL(ARC_ENGINE_SO)
+dllc = CDLL(SYSTEM_LIB)
+
 ASF_DETECT_MODE_VIDEO = 0x00000000
 ASF_DETECT_MODE_IMAGE = 0xFFFFFFFF
 c_ubyte_p = POINTER(c_ubyte)

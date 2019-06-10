@@ -1,5 +1,7 @@
 from ctypes import *
-from . import MRECT
+# 人脸框
+class MRECT(Structure):
+    _fields_ = [(u'left', c_int32), (u'top', c_int32), (u'right', c_int32), (u'bottom', c_int32)]
 
 
 # 版本信息

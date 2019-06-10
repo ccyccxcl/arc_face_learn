@@ -1,4 +1,3 @@
-
 from ctypes import *
 
 class ASF_AgeInfo(Structure):

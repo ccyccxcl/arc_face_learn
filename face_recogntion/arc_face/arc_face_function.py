@@ -1,4 +1,4 @@
-from vision.face_recogntion.arc_face import face_dll, face_detect_sdk, face_property_sdk
+from . import face_dll, face_detect_sdk, face_property_sdk
 from ctypes import *
 import cv2
 import numpy as np
@@ -21,6 +21,7 @@ def loadImage(image):
     if type(image.data) is np.ndarray:
         img = image.data
         sp = img.shape
+        # arc_face输入图片的宽为4的倍数
         img = cv2.resize(img, (sp[1] // 4 * 4, sp[0] // 4 * 4))
     else:
         # 本地读取
