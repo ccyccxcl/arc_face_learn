@@ -5,6 +5,15 @@ import os
 from conf import *
 import cv2
 
+'''
+arc_face SDK(V2.0)
+
+#run
+python3 --image_path test.jpg
+
+developer:jeffa
+'''
+
 
 def logging_handle(logging_path):
     logger_name = os.path.splitext(os.path.split(logging_path)[1])[0]
