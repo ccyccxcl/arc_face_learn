@@ -9,7 +9,7 @@ import cv2
 arc_face SDK(V2.0)
 
 #run
-python3 --image_path test.jpg
+python3 detection.py --image_path test.jpg
 
 developer:jeffa
 '''

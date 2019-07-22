@@ -1,6 +1,6 @@
 # 虹软SDK激活码
-APP_ID = b'x'
-SDK_KEY = b'x'
+APP_ID = b'A1YjucL6yk9taHPiyZHSMFbtNdop7sffALUEtiC2PkES'
+SDK_KEY = b'Bxfbxu29GneivTryx9uBmoekzt4jBwhXZqVLqRJkKtzc'
 # 虹软SDK激活库
 ARC_INIT_SO = "./lib/libarcsoft_face.so"
 # 虹软SDK功能函数库
