@@ -18,5 +18,9 @@ enviroment:  ubuntu18.04,python3.6+
 >input face to dbface
 
 3.Run
-> python3 --image_path xxx.jpg
+> python3 detection.py --image_path test.jpg
 
+4.Attention
+>关于离线的问题,第一次需要激活SDK,即将FACE_ACTION=True。
+>
+>之后只要是物理IP不变就可以离线使用
